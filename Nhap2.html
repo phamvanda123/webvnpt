@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Hiển thị 1 nhóm sản phẩm mỗi lần */
+    width: 100%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+p {
+        margin-bottom: 5px; /* Khoảng cách giữa các đoạn */
+        color: white; /* Màu chữ */
+    }
+
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="row p-4">
+                    <div class="col-sm-4 mt-2">
+                        <div class="card border-primary">
+                            <div class="image-container">
+                                <img src="img/HomNet1.jpg" class="card-img-top" alt="Image">
+                                <div class="info">
+                                    <h3>Home Net 1</h3>
+                                    <p><span class="check">&#9733;</span>Tốc độ Internet 100 Mbps</p>
+                                    <p><span class="check">&#9733;</span>Hỗ trợ modem wifi 2 băng tần</p>
+                                    <p><span class="check">&#9733;</span>Dịch vụ GreenNet</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center"  data-aos="fade-up">
+                                    <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                                    <a href="#" class="btn btn-primary1">Đăng Ký Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <!-- Lặp lại sản phẩm -->
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <!-- Lặp lại sản phẩm -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"  data-aos="fade-up">
+                <div class="row p-4">
+                    <!-- Nhóm sản phẩm tiếp theo -->
+                </div>
+            </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="row" data-aos="fade-up"
+    data-aos-duration="3000"  data-aos="fade-up">
+        <!-- Cột trái -->
+        <div class="col-md-6">
+            <p>VNPT VinaPhone © 2019.</p>
+            <p>Giấy phép số: 62/GP-TTĐT do Bộ Thông tin - Truyền thông cấp ngày 09/04/2019.</p>
+            <p>Tập đoàn Bưu chính Viễn thông Việt Nam</p>
+        </div>
+        <!-- Cột phải -->
+        <div class="col-md-6" data-aos="fade-up"
+        data-aos-duration="3000">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+        <div class="col-md-6"  data-aos="fade-up">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+        <div class="col-md-6"  data-aos="fade-up">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+        <div class="col-md-6"  data-aos="fade-up">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+        <div class="col-md-6"  data-aos="fade-up">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+        <div class="col-md-6"  data-aos="fade-up">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+        <div class="col-md-6"  data-aos="fade-right">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+        <div class="col-md-6"  data-aos="fade-right">
+            <p>Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+            <p>Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 14/10/2016</p>
+        </div>
+    </div>
+
+    
+    <script>
+        let currentIndex = 0; // Vị trí ban đầu của slide
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+function moveSlide(direction) {
+    // Ẩn nhóm sản phẩm hiện tại
+    items[currentIndex].style.display = 'none';
+
+    // Tính toán vị trí tiếp theo
+    currentIndex += direction;
+
+    // Xử lý vòng lặp
+    if (currentIndex < 0) {
+        currentIndex = totalItems - 1;
+    } else if (currentIndex >= totalItems) {
+        currentIndex = 0;
+    }
+
+    // Hiển thị nhóm sản phẩm mới
+    items[currentIndex].style.display = 'block';
+}
+
+// Hiển thị nhóm sản phẩm đầu tiên
+items.forEach((item, index) => {
+    item.style.display = index === 0 ? 'block' : 'none';
+});
+
+    </script>
+    
+</body>
+</html>

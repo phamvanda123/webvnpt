@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+    *{
+        box-sizing: border-box;
+        font-family: 'popins', sans-serif;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #32cd9c;
+    }
+    .container{
+        width: 350px;
+        background-color: white;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .container input{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #777777;
+        margin-bottom: 20px;
+        font-size: 16px;
+        outline: none;
+    }
+    .btn{
+        border: none !important;
+        cursor: pointer;
+        background-color: #32cd9c;
+        margin: 15px 0;
+        font-size: 16px;
+        width: 100%;
+        padding: 14px;
+    }
+    .btn:hover{
+        background-color: #1f7d5f;
+        color: white;
+    }
+   </style>
+    </head>
+
+<body>
+    <div class="container">
+        <h2>Get in touch</h2>
+        <form action="https://formsubmit.co/levankhanh2002hg@gmail.com" method="POST">
+            <input type="text" name="name" required placeholder="name">
+            <input type="text"  name="phone" required placeholder="phone">
+            <input type="email"  name="email" required placeholder="email">
+            <textarea placeholder="Message" name="Message" required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <button type="submit" class="btn">submit</button>
+        </form>
+
+    </div>
+    
+</body>
+
+</html>

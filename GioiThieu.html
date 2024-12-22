@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/gioithieu.css">
+    <style type="text/css">
+        @media (min-width: 1300px) {
+            .navbarmenu {
+                width: 50%;
+            }
+
+            .navbarmenu .trangchu {
+                width: 80px;
+            }
+
+            .navbarmenu .napthe {
+                width: 54px;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4317f8d350.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>VNPT Cần Thơ</title>
+</head>
+
+<body>
+    <section class="sticky-top main-bg ss-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-white" href="index.html">
+                    <img src="img/cropped-logo-vnpt-2.jpg" alt="Avatar Logo " style="width: 50px" />
+                </a>
+                <button class="btn btn-danger navbar-toggler border-3 px-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <img style="width: 30px" src="/img/text-center.svg" alt="menu icon" />
+                </button>
+                <div class="offcanvas offcanvas-start-lg mybackgroundMain" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header d-flex d-lg-none">
+                        <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">
+                            <?php echo $name ?>
+                        </h5>
+                        <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas"
+                            aria-label="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF"
+                                class="bi bi-x-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="offcanvas-body p-lg-0 d-flex flex-column">
+                        <ul class="navbar-nav d-flex">
+                            <li class="nav-item py-2">
+                                <a class="nav-link active" aria-current="page" href="index.html">
+                                    <i class="fa-sharp fa-solid fa-house"></i> Trang chủ</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link active" count="0" aria-current="page" href="DiDong.html">
+                                    <i class="fa-solid fa-mobile fa-shake"></i></i> Sản phẩm di động</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <div class="dropdown">
+                                    <a class="login nav-link active" href="TrangMang.html" id="dropdownMenuButton">
+                                        <i class="fa-solid fa-user fa-bounce"></i> Sản phẩm
+                                        internet
+                                    </a>
+                                </div>
+
+                                <style>
+                                    /* Hiển thị dropdown khi hover vào phần tử cha */
+                                </style>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link active" aria-current="page" href="TrangDangKy.html">Liên hệ</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link active" aria-current="page" href="GioiThieu.html">Giới thiệu về chúng
+                                    tôi</a>
+                            </li>
+                            <!-- <div class="nav-item1 ms-auto">
+                                <form class="d-flex active nav-link">
+                                    <input class="form-control my-input me-2" style="width: 100%;" type="text" placeholder="Tìm Kiếm">
+                                    <div class="btn btn-my-basic search-control" style="width: 20%;"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                </form>
+                            </div> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="caousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-2">
+            <div class="row p-2">
+                <div class="col-sm-6 ">
+                    <div class="card">
+                        <img class="border-radius" src="/img/anhdemo1.jpg" alt="">
+                    </div>
+                    <h3><a href="#">VNPT tiên phong siêu công nghệ, kiến tạo cuộc sống </a></h3>
+                    <p>Tại sự kiện Internet Day 2024 với chủ đề “Bước tiến mới cho Internet Việt Nam: Bứt phá với DC,
+                        Cloud, 5G &
+                        AI,” Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT) đã giới thiệu các giải pháp công nghệ đột
+                        phá, tiếp tục
+                        khẳng định vai trò tiên phong trong việc thúc đẩy kết nối và chuyển đổi số toàn diện. Sự kiện
+                        diễn ra tại
+                        khách sạn Grand Plaza Hà Nội, thu hút hơn 800 khách mời, bao gồm các cơ quan quản lý, doanh
+                        nghiệp công nghệ
+                        hàng đầu trong và ngoài nước.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row mt-2">
+                        <div class="col-sm-3">
+                            <img class="border-radius" src="img/anhdemo1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col-sm-9">
+                            <h5><a href="#">
+                                    Khách hàng VNPT, VinaPhone đón Tết linh đình với kho quà hơn 5,5 tỷ đồng</a></h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-sm-3">
+                            <img class="border-radius" src="img/anhdemo1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col-sm-9">
+                            <h5><a href="#">
+                                    Khách hàng VNPT, VinaPhone đón Tết linh đình với kho quà hơn 5,5 tỷ đồng</a></h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-sm-3">
+                            <img class="border-radius" src="img/anhdemo1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col-sm-9">
+                            <h5><a href="#">
+                                    Khách hàng VNPT, VinaPhone đón Tết linh đình với kho quà hơn 5,5 tỷ đồng</a></h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="GT">
+            <h2>VNPT Cần Thơ: Mạng lưới phủ sóng rộng khắp, kết nối không giới hạn</h2>
+            <div>
+                <h3>1. Giới Thiệu Về VNPT</h3>
+                <br>
+                <p>VNPT Cần Thơ là đơn vị trực thuộc Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), cung cấp các dịch vụ
+                    viễn thông và công nghệ thông tin hàng đầu tại khu vực Đồng bằng sông Cửu Long. Với hơn 75 năm kinh
+                    nghiệm trong ngành, VNPT Cần Thơ luôn tiên phong ứng dụng công nghệ hiện đại, mang đến cho khách
+                    hàng những giải pháp tối ưu và tiện ích.</p>
+                <h3>2. Các dịch vụ nổi bật của VNPT Cần Thơ</h4>
+                    <div class="ND">
+                         <h6>1. Internet cáp quang VNPT FiberVNN</h5>
+                        <li>Kết nối ổn định, phù hợp cho cá nhân, gia đình và doanh nghiệp</li>
+                        <li>Hạ tầng cáp quang toàn diện, công nghệ GPON hiện đại.</li>
+                        <h6>2. Dịch vụ truyền hình MyTV</h5>
+                            <li>Hơn 180 kênh truyền hình, bao gồm nhiều kênh HD và quốc tế.</li>
+                            <li>Kho phim phong phú, chương trình giải trí đa dạng.</li>
+                            <li>Tích hợp tính năng tua lại, xem lại, tiện lợi mọi lúc.</li>
+                    </div>
+                   
+                            <h3>3.Ưu điểm khi chọn VNPT Cần Thơ</h4>
+                                <li>Độ phủ rộng: Mạng lưới viễn thông bao phủ khắp các quận, huyện tại Cần Thơ.</li>
+                                <li>Chất lượng dịch vụ vượt trội: Hạ tầng hiện đại, đảm bảo tốc độ và độ ổn định.</li>
+                                <li>Hỗ trợ chuyên nghiệp: Đội ngũ kỹ thuật viên và chăm sóc khách hàng hoạt động 24/7.
+                                </li>
+                                <li>Giá cả hợp lý: Nhiều gói cước đa dạng, phù hợp với mọi nhu cầu.</li>
+            </div>
+        </div>
+    </section>
+    <a href="TrangDangKy.html" class="btn">Đăng Ký Ngay</a>
+    <section class="sp-icon">
+        <div class="support-icon" id="supportIcon">
+            <i class="fa-solid fa-message"></i>
+        </div>
+        <div class="contact-box" id="contactBox">
+            <a href="https://m.me/yourprofile" class="contact-btn btn-mess" target="_blank">
+                <i class="fab fa-facebook-messenger"></i> Messenger
+            </a>
+            <a href="https://zalo.me/yourzalo" class="contact-btn btn-zalo" target="_blank">
+                <i class="fa-solid fa-message"></i> Zalo
+            </a>
+            <a href="tel:+1234567890" class="contact-btn btn-contact">
+                <i class="fa-solid fa-phone"></i> Gọi trực tiếp
+            </a>
+        </div>
+        <div id="lopphu" style=" width: 100%; /* Phủ toàn bộ chiều rộng */
+      height: 100%; /* Phủ toàn bộ chiều cao */
+      background-color: black; /* Màu đen */
+      opacity: 0.2; /* Độ mờ */
+      position: fixed; /* Cố định vị trí */
+      top: 0; /* Canh trên */
+      left: 0; /* Canh trái */
+      display: none;
+      z-index: 998; /* Đặt trên các phần tử khác */">
+            d
+        </div>
+        <div class="TTLH" style="margin: 0% 0% 0% 15%;">
+            <div class="row p-3">
+
+                <div class="col-sm-4 mt-2">
+                    <img src="img/old-typical-phone.png" alt="">
+                    <br>
+                    <a href="tel:+1234567890">Hotline: +1234567890</a>
+
+
+                </div>
+                <div class="col-sm-4 mt-2">
+                    <img src="img/meil.png" alt="">
+                    <br>
+                    <a href="https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop">Gửi email
+                        tới
+                        Phong</a>
+
+
+                </div>
+                <div class="col-sm-4 mt-2">
+                    <img src="img/facebook.png" alt="">
+                    <br>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        Truy cập Facebook của tôi
+                    </a>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Nút cuộn lên đầu trang -->
+        <div class="scroll-top-btn" id="scrollTopBtn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <script src="js/main.js"> </script>
+    </section>
+    <section class="footer main-bg">
+        <div class="container">
+            <div class="row d-flex p-3">
+                <img src="/img/logo_footer.png" class="justify-content-start" alt="" style="width: 20%;">
+            </div>
+            <div class="row">
+                <div class=" ms-3 col-sm-8 text-white">VNPT VinaPhone © 2019.
+
+                    Giấy phép số: 62/GP-TTĐT do Bộ Thông tin - Truyền thông cấp ngày 09/04/2019.
+                    <br>
+                    Tập đoàn Bưu chính Viễn thông Việt Nam
+                    <br>
+                    Trụ sở: Tòa nhà VNPT, số 57 Phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội,
+                    Việt Nam
+                    <br>
+                    Mã số doanh nghiệp: 0100684378 do Sở Kế hoạch và Đầu tư TP.Hà Nội cấp ngày 22/10/2018
+                    <br>
+                    Giấy phép cung cấp dịch vụ viễn thông số 469/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày
+                    14/10/2016
+                    <br>
+                    Giấy phép cung cấp dịch vụ viễn thông số 18/GP-CVT do Bộ Thông tin và Truyền thông cấp ngày
+                    18/01/2018
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
